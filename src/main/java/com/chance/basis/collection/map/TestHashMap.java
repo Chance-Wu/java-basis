@@ -1,4 +1,4 @@
-package com.chance.basis.map;
+package com.chance.basis.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;

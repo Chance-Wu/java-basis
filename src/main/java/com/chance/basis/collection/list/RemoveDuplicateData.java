@@ -1,6 +1,5 @@
-package com.chance.basis.list;
+package com.chance.basis.collection.list;
 
-import javax.management.ListenerNotFoundException;
 import java.util.*;
 import java.util.stream.Collectors;
 
