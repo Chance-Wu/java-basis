@@ -1,4 +1,4 @@
-package com.chance.basis.list;
+package com.chance.basis.collection.list;
 
 import java.util.ArrayList;
 
