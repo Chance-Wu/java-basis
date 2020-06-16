@@ -1,4 +1,6 @@
-package com.chance.basis.thread;
+package com.chance.basis.thread.create;
+
+import com.chance.basis.thread.create.CallableTest;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Future;
