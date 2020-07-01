@@ -1,4 +1,4 @@
-package com.chance.basis.thread.communicate;
+package com.chance.basis.thread.communicate.sync;
 
 /**
  * <p>
