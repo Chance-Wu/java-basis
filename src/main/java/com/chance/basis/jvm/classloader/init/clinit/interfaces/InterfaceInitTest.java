@@ -8,5 +8,7 @@ package com.chance.basis.jvm.classloader.clinit.interfaces;
  * @author chance
  * @since 2020-07-02
  */
-public class InterfaceInitTestImpl {
+public interface InterfaceInitTest {
+
+    long A = System.currentTimeMillis();
 }

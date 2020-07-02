@@ -8,5 +8,7 @@ package com.chance.basis.jvm.classloader.clinit.interfaces;
  * @author chance
  * @since 2020-07-02
  */
-public class CurrentTime {
+public interface InterfaceInitTest1 extends InterfaceInitTest {
+
+    int B = 100;
 }
