@@ -1,4 +1,4 @@
-package com.chance.basis.jvm.classloader.clinit.interfaces;
+package com.chance.basis.jvm.classloader.init.clinit.interfaces;
 
 import java.sql.SQLOutput;
 

@@ -1,4 +1,4 @@
-package com.chance.basis.jvm.classloader.clinit.interfaces;
+package com.chance.basis.jvm.classloader.init.clinit.interfaces;
 
 /**
  * <p>
@@ -11,8 +11,8 @@ package com.chance.basis.jvm.classloader.clinit.interfaces;
 public class InterfaceInitTestImpl implements InterfaceInitTest1 {
 
     public static void main(String[] args) {
-        System.out.println(InterfaceInitTestImpl.B);
+        System.out.println(B);
         System.out.println("---------------------------");
-        System.out.println("当前时间：" + InterfaceInitTestImpl.A);
+        System.out.println("当前时间：" + A);
     }
 }

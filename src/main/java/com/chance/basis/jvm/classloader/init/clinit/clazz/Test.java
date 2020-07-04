@@ -1,4 +1,4 @@
-package com.chance.basis.jvm.classloader.clinit.clazz;
+package com.chance.basis.jvm.classloader.init.clinit.clazz;
 
 /**
  * <p>
