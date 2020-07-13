@@ -10,8 +10,8 @@ package com.chance.basis.concurrency;
  */
 public class VolatileTest {
 
-    int a = 1;
-    int b = 2;
+    volatile int a = 1;
+    volatile int b = 2;
 
     public void change() {
         a = 3;
