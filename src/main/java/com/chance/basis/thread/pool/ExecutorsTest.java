@@ -1,4 +1,4 @@
-package com.chance.basis.thread;
+package com.chance.basis.thread.pool;
 
 /**
  * <p>
@@ -6,11 +6,10 @@ package com.chance.basis.thread;
  * <p>
  *
  * @author chance
- * @since 2020-02-05
+ * @since 2020-07-04
  */
-public class TestInBlockedIOState {
+public class ExecutorsTest {
 
     public static void main(String[] args) {
-
     }
 }
