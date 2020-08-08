@@ -14,7 +14,7 @@ import java.util.Hashtable;
  * @author chance
  * @since 2020-02-06
  */
-public class TestHashMapAndHashtable {
+public class HashMapAndHashtableTest {
 
     public static void main(String[] args) {
 

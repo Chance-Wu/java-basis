@@ -10,7 +10,7 @@ import java.util.HashMap;
  * @author chance
  * @since 2020-06-27
  */
-public class TestEqualsAndHashCode {
+public class EqualsAndHashCodeTest {
 
     private static class Person {
         int idCard;

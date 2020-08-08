@@ -11,7 +11,7 @@ import java.util.Random;
  * @author chance
  * @since 2020-06-20
  */
-public class TestHashSet {
+public class HashSetTest {
 
     public static void main(String[] args) {
 
