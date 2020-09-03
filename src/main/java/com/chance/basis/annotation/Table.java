@@ -1,17 +1,15 @@
 package com.chance.basis.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @author chance
  *
- * Target表示注解可以贴在哪些程序元素上面
+ * Target表示注解的作用目标
  *
  * Retention表示注解可以保留到哪个阶段，一般自定义保留到RUNTIME运行时
  */
+@Documented
 @Target(ElementType.ANNOTATION_TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Table {
