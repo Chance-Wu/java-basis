@@ -1,6 +1,6 @@
 package com.chance.designpatterns.patterns.abstractdocument.domain;
 
-import com.chance.patterns.abstractdocument.Document;
+import com.chance.designpatterns.patterns.abstractdocument.Document;
 
 import java.util.Optional;
 
