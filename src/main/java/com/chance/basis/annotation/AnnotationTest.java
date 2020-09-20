@@ -1,6 +1,5 @@
 package com.chance.basis.annotation;
 
-import com.sun.tools.javac.util.Log;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
