@@ -33,8 +33,15 @@ public class Person {
     public Person() {
     }
 
-    public Person(String name, int weight) {
+    public Person(String name) {
         this.name = name;
+    }
+
+    public Person(String name, int weight) {
+//        this.name = name;
+        // 必须放在构造器首行，保证至少有一个构造器是不使用this的
+        this(name);
+        // 形参与成员变量重名时，使用this指定该变量是类的成员变量
         this.weight = weight;
     }
 

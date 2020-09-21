@@ -80,8 +80,9 @@ public class BitOperatorTest {
     }
 
     /**
-     * c
-     * 反码运算
+     * 反码运算：
+     * 整数取反，各二进制码按补码各位取反；
+     * 负数取反，各二进制码按补码各位取反
      */
     @Test
     public void complementOperation() {
