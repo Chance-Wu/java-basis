@@ -17,7 +17,7 @@ public class Singleton1_2 {
     private int f1 = 1; // 触发部分初始化问题
     private int f2 = 2;
 
-    public Singleton1_2() {
+    private Singleton1_2() {
     }
 
     public static Singleton1_2 getInstance() {

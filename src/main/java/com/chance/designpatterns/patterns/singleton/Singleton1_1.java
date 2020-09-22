@@ -5,6 +5,8 @@ package com.chance.designpatterns.patterns.singleton;
  * 饱汉-变种1
  *
  * 使用synchronized关键字修饰getInstance()方法，达到绝对的线程安全
+ *
+ * synchronized方法带来极大的cpu开销
  * <p>
  *
  * @author chance
@@ -14,7 +16,7 @@ public class Singleton1_1 {
 
     private static Singleton1_1 singleton = null;
 
-    public Singleton1_1() {
+    private Singleton1_1() {
     }
 
     public synchronized static Singleton1_1 getInstance() {

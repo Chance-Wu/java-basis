@@ -17,7 +17,7 @@ public class Singleton1_3 {
     private int f1 = 1;
     private int f2 = 2;
 
-    public Singleton1_3() {
+    private Singleton1_3() {
     }
 
     public static Singleton1_3 getInstance() {
