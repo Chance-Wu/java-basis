@@ -94,4 +94,8 @@ public class Person {
         }
         return false;
     }
+
+    public String getInfo() {
+        return "name:"+name+","+"weight:"+weight;
+    }
 }
