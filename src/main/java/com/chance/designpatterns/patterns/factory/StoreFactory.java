@@ -33,11 +33,4 @@ public class StoreFactory {
         }
         return commodity;
     }
-
-    @Test
-    public void test() {
-        StoreFactory factory = new StoreFactory();
-        ICommodity commodity = factory.createCommodityService(1);
-        System.out.println(commodity);
-    }
 }
