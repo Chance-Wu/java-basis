@@ -1,7 +1,6 @@
 package com.chance.basis.collection.list;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * <p>
@@ -26,10 +25,17 @@ public class TestArrayLsitAndLinkedList {
         arrayList.add("1");
         arrayList.add("1");
         arrayList.add("2");
+        arrayList.add("3");
+        String[] strArr = new String[arrayList.size()];
+        String[] toArray = arrayList.toArray(strArr);
+        System.out.println(toArray.length);
+        List<String> asList = Arrays.asList(toArray);
 
         System.out.println(arrayList.get(2));
-        System.out.println(arrayList.set(2,"1"));
+        System.out.println(arrayList.set(2, "1"));
         System.out.println(arrayList);
+        // 不能强制转换成ArrayList
+        List<Object> list = arrayList.subList(0, 1);
 
         /**
          * LinkedList基于链表
