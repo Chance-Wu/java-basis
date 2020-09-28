@@ -12,6 +12,7 @@ package com.chance.basis.thread.create;
 public class ThreadTest extends Thread {
 
     public ThreadTest() {
+        super.setName("ThreadTest");
     }
 
     /**
