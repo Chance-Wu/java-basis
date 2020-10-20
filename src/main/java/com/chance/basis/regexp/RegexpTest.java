@@ -13,7 +13,8 @@ import java.util.regex.Pattern;
  */
 public class RegexpTest {
 
-    private static Pattern NUMBER_PATTERN = Pattern.compile("^[-\\+]?[\\d]*$");
+    //    private static Pattern NUMBER_PATTERN = Pattern.compile("^[-\\+]?[\\d]*$");
+    private static Pattern NUMBER_PATTERN = Pattern.compile("-?[0-9]+(\\\\.[0-9]+)?");
 
     @Test
     public void test() {
@@ -21,7 +22,8 @@ public class RegexpTest {
         list.add("12312");
         list.add("142a");
         list.add("142");
-        for (String str:list) {
+        list.add("12232342343333");
+        for (String str : list) {
             // 判断字符串是否为纯数字
             if (!isNumeric(str)) {
                 // 跳过，进入下一次循环
@@ -33,10 +35,12 @@ public class RegexpTest {
 
     /**
      * 判断字符串是否为数字
+     *
      * @param str
      * @return
      */
     public static boolean isNumeric(String str) {
-        return NUMBER_PATTERN.matcher(str).matches();
+//        return NUMBER_PATTERN.matcher(str).matches();
+        return str.matches("12" + "[0-9]{12}");
     }
 }
