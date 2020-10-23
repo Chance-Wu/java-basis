@@ -109,12 +109,29 @@
             <version>1.2.70</version>
         </dependency>
 
-        <!--for excel component-->
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>3.13</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
         </dependency>
+
+        <!--for excel component-->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.poi</groupId>-->
+        <!--    <artifactId>poi</artifactId>-->
+        <!--    <version>3.9</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.poi</groupId>-->
+        <!--    <artifactId>poi-ooxml</artifactId>-->
+        <!--    <version>3.9</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.poi</groupId>-->
+        <!--    <artifactId>poi-ooxml-schemas</artifactId>-->
+        <!--    <version>3.9</version>-->
+        <!--</dependency>-->
+
 
         <dependency>
             <groupId>junit</groupId>
