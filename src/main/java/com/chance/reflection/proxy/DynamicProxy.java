@@ -1,4 +1,4 @@
-package com.chance.basis.reflection.proxy;
+package com.chance.reflection.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
