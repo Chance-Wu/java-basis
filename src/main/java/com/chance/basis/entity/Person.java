@@ -1,5 +1,7 @@
 package com.chance.basis.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * <p>
  *
@@ -95,6 +97,7 @@ public class Person {
         return false;
     }
 
+    @JsonIgnore
     public String getInfo() {
         return "name:"+name+","+"weight:"+weight;
     }
