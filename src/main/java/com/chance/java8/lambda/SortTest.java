@@ -36,7 +36,7 @@ public class SortTest {
 
         // 简化（当然过你的实现不是一行代码，那么不能这么干）
         Collections.sort(names, (String a, String b) -> b.compareTo(a));
-        // java.util.List 集合现在已经添加了 sort 方法。而且 Java 编译器能够根据类型推断机制判断出参数类型，这样，连入参的类型都可以省略
+        // java.utils.List 集合现在已经添加了 sort 方法。而且 Java 编译器能够根据类型推断机制判断出参数类型，这样，连入参的类型都可以省略
         Collections.sort(names, (a, b) -> b.compareTo(a));
 
         // Comparator接口中还提供了stack默认方法，也就是说接口中不是只可有default默认实现，还可以有静态方法
