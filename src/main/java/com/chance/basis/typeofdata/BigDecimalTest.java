@@ -11,7 +11,7 @@ import java.math.BigDecimal;
  * @author chance
  * @since 2020-07-01
  */
-public class TestBigDecimal {
+public class BigDecimalTest {
 
     public static void main(String[] args) {
 
