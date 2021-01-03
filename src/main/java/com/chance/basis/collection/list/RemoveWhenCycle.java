@@ -64,5 +64,6 @@ public class RemoveWhenCycle {
         }
 
         System.out.println(platformList);
+
     }
 }

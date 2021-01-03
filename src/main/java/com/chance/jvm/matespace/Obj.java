@@ -18,4 +18,6 @@ public class Obj {
     public final int k = 10;
 
     public int m = 10;
+
+    public int[] l;
 }

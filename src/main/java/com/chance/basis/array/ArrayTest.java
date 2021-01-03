@@ -101,4 +101,13 @@ public class ArrayTest {
             System.out.println(i);
         }
     }
+
+    @Test
+    public void testArray() {
+        // 长度固定
+        int[] arr = new int[10];
+        arr[0] = 0;
+        // 实际对象数量不可知
+        System.out.println(arr.length);
+    }
 }

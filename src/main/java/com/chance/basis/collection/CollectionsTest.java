@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * <p>
- * Collections工具类的常用方法
+ * 容器工具类——Collections的常用方法
  * <p>
  *
  * @author chance
