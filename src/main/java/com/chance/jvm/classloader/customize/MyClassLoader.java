@@ -1,5 +1,8 @@
 package com.chance.jvm.classloader.customize;
 
+import sun.applet.AppletClassLoader;
+import sun.misc.Launcher;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,7 +19,7 @@ import java.lang.reflect.Method;
 public class MyClassLoader extends ClassLoader {
 
     /**
-     * 读取文件内容
+     * 编写读取字节流的方法
      *
      * @param fileName 文件名
      * @return
@@ -35,6 +38,13 @@ public class MyClassLoader extends ClassLoader {
         }
     }
 
+    /**
+     * 编写获取类的字节码并创建class对象的逻辑
+     *
+     * @param name
+     * @return
+     * @throws ClassNotFoundException
+     */
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         Class clazz = null;
@@ -68,5 +78,11 @@ public class MyClassLoader extends ClassLoader {
         Method main = aClass.getMethod("test", String.class);
         System.out.println(main);
         main.invoke(aClass.newInstance(), "Hello World");
+
+        System.out.println("自定义类加载器的父加载器: " + myClassloader.getParent());
+        System.out.println("系统默认的AppClassLoader: " + ClassLoader.getSystemClassLoader());
+        System.out.println("AppClassLoader的父类加载器: " + ClassLoader.getSystemClassLoader().getParent());
+        System.out.println("ExtClassLoader的父类加载器: " + ClassLoader.getSystemClassLoader().getParent().getParent());
+
     }
 }

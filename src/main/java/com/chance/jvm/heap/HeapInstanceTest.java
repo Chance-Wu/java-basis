@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * @Description: HeapInstanceTest
+ * @Description: 演示对象分配过程
  * @Author: chance
  * @Date: 2020-11-03 16:30
  * @Version 1.0

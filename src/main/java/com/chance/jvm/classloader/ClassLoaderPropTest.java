@@ -15,6 +15,11 @@ import java.util.Enumeration;
 public class ClassLoaderPropTest {
 
     public static void main(String[] args) throws IOException {
+
+        System.out.println("BootstrapClassLoader 加载的jar包路径" + System.getProperty("sun.boot.class.path"));
+        System.out.println("ExtClassLoader 加载的jar包路径" + System.getProperty("java.ext.dirs"));
+        System.out.println("AppClassLoader 加载的jar包路径" + System.getProperty("java.class.path"));
+
         //获取系统类加载器
         ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
         System.out.println("系统类加载器：" + systemClassLoader);
