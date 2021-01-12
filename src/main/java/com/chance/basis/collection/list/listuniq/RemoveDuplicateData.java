@@ -1,4 +1,4 @@
-package com.chance.basis.collection.list;
+package com.chance.basis.collection.list.listuniq;
 
 import java.util.*;
 import java.util.stream.Collectors;
