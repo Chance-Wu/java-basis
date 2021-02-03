@@ -9,4 +9,6 @@ package com.chance.designpatterns.patterns.proxy;
 public interface Image {
 
     void display();
+
+    void ignore();
 }

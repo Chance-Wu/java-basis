@@ -1,4 +1,4 @@
-package com.chance.designpatterns.patterns.proxy;
+package com.chance.designpatterns.patterns.proxy.dynamic;
 
 /**
  * @Description: RealImage
@@ -6,9 +6,12 @@ package com.chance.designpatterns.patterns.proxy;
  * @Date: 2020-09-23 09:40
  * @Version 1.0
  */
-public class RealImage implements Image {
+public class RealImage {
 
     private String fileName;
+
+    public RealImage() {
+    }
 
     public RealImage(String fileName) {
         this.fileName = fileName;
@@ -19,12 +22,10 @@ public class RealImage implements Image {
         System.out.println("Loading " + fileName);
     }
 
-    @Override
     public void display() {
         System.out.println("Displaying " + fileName);
     }
 
-    @Override
     public void ignore() {
         System.out.println("Ignore " + fileName);
     }
