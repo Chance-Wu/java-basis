@@ -6,14 +6,14 @@ package com.chance.designpatterns.patterns.proxy.dynamic;
  * @Date: 2020-09-23 09:40
  * @Version 1.0
  */
-public class RealImage {
+public class RealImage2 {
 
     private String fileName;
 
-    public RealImage() {
+    public RealImage2() {
     }
 
-    public RealImage(String fileName) {
+    public RealImage2(String fileName) {
         this.fileName = fileName;
         loadFromDisk(fileName);
     }
