@@ -32,7 +32,7 @@ public class JdbcUtil {
             // CRUD
             ResultSet resultSet = statement.executeQuery("select * from user");
 
-            //
+            // 处理结果集
             while (resultSet.next()) {
                 String username = resultSet.getString("username");
                 System.out.println(username);
