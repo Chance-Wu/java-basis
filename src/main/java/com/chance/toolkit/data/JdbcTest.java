@@ -1,4 +1,4 @@
-package com.chance.toolkit.utils;
+package com.chance.toolkit.data;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,9 +11,9 @@ import java.sql.*;
  * @Date: 4/6/21 9:36 PM
  * @Version 1.0
  */
-public class JdbcUtil {
+public class JdbcTest {
 
-    public final static Logger logger = LoggerFactory.getLogger(JdbcUtil.class);
+    public final static Logger logger = LoggerFactory.getLogger(JdbcTest.class);
 
 
     public static void main(String[] args) {
