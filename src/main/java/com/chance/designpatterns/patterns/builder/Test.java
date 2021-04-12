@@ -19,5 +19,11 @@ public class Test {
 
         System.out.println(personBuilder.toString());
 
+        Person2 person2 = new Person2.Person2Builder()
+                .name("chance")
+                .age(18)
+                .build();
+
+        Computer computer = new Computer.Builder("i5", "8g").build();
     }
 }

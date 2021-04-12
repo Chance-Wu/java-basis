@@ -2,7 +2,7 @@ package com.chance.designpatterns.patterns.builder;
 
 /**
  * <p>
- *
+ * 折叠构造函数模式
  * <p>
  *
  * @author chance

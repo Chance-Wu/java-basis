@@ -47,6 +47,9 @@ public class PersonBuilder {
         this.desc = builder.desc;
     }
 
+    /**
+     * 静态内部类
+     */
     public static class Builder {
         //必要参数
         private final int id;
