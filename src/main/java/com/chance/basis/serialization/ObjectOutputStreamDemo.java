@@ -1,5 +1,7 @@
 package com.chance.basis.serialization;
 
+import com.chance.basis.entity.Car;
+
 import java.io.*;
 
 /**
@@ -19,8 +21,8 @@ public class ObjectOutputStreamDemo {
         //装饰流（流）
         oos = new ObjectOutputStream(new FileOutputStream(file));
 
-        //实例化类
-        Person per = new Person("张三", 30);
+        //实例化类（包含对不可序列化的Car对象的引用，导致整个序列化失败）
+        Person per = new Person("张三", 30, new Car());
         //把类对象序列化
         oos.writeObject(per);
         oos.close();
