@@ -13,14 +13,15 @@ import java.util.List;
  */
 public class MyList {
 
-    private List<String> list = new ArrayList<String>();
+    private List<String> list = new ArrayList<>();
+
+    private volatile int size = list.size();
 
     public void add() {
         list.add("elements");
     }
 
-    public int size() {
-        return list.size();
+    public int getSize() {
+        return size;
     }
-
 }

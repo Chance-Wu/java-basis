@@ -11,12 +11,10 @@ package com.chance.thread.communicate.sync;
 public class MyObject {
 
     synchronized public void methodA() {
-        //TODO
         System.out.println("执行A方法");
     }
 
     synchronized public void methodB() {
-        //TODO
         System.out.println("执行B方法");
     }
 }

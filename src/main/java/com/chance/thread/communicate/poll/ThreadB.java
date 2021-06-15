@@ -21,7 +21,7 @@ public class ThreadB extends Thread {
     public void run() {
         try {
             while (true) {
-                if (list.size() == 5) {
+                if (list.getSize() == 5) {
                     System.out.println("==5, 线程b准备退出了");
                     throw new InterruptedException();
                 }
