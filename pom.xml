@@ -82,6 +82,14 @@
             <version>1.7.2</version>
         </dependency>
 
+        <!-- netty -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.63.Final</version>
+        </dependency>
+
+
         <!--其他工具包-->
 
         <!--解析xml-->
