@@ -1,6 +1,5 @@
 package com.chance.toolkit.javassist;
 
-import com.sun.org.apache.xpath.internal.operations.String;
 import javassist.*;
 import org.junit.Test;
 

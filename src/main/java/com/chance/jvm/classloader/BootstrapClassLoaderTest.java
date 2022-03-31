@@ -1,10 +1,5 @@
 package com.chance.jvm.classloader;
 
-import sun.misc.Launcher;
-
-import java.net.URL;
-import java.util.Arrays;
-
 /**
  * <p>
  * 根加载器加载所加载的全部URL
@@ -16,7 +11,7 @@ import java.util.Arrays;
 public class BootstrapClassLoaderTest {
     public static void main(String[] args) {
         // 获取根类加载器所加载的全部URL数组
-        URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
-        Arrays.stream(urLs).forEach(System.out::println);
+//        URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
+//        Arrays.stream(urLs).forEach(System.out::println);
     }
 }

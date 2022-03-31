@@ -1,7 +1,5 @@
 package com.chance.reflection;
 
-import com.sun.xml.internal.rngom.parse.host.Base;
-
 /**
  * <p>
  * 类型转换前先做检查
@@ -10,12 +8,12 @@ import com.sun.xml.internal.rngom.parse.host.Base;
  * @author chance
  * @since 2020-02-19
  */
-public class Derived extends Base {
+public class Derived {
 
     public static void main(String[] args) {
-        Base base = new Derived();
+        Object base = new Derived();
         //判断类型
-        if (base instanceof Derived) {
+        if (base instanceof Object) {
             System.out.println("ok");
         } else {
             System.out.println("error");

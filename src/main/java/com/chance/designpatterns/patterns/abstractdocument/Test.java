@@ -1,12 +1,12 @@
 package com.chance.designpatterns.patterns.abstractdocument;
 
 import com.chance.designpatterns.patterns.abstractdocument.domain.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 
 /**
  * <p>
@@ -16,10 +16,11 @@ import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
  * @author chance
  * @since 2020-06-19
  */
+@Slf4j
 public class Test {
 
     public static void main(String[] args) {
-        LOGGER.info("Constructing parts and car");
+        log.info("Constructing parts and car");
         // 车属性map
         Map<String, Object> carProperties = new HashMap<>(16);
         carProperties.put(HasModel.PROPERTY, "300SL");
@@ -41,10 +42,10 @@ public class Test {
 
         Car car = new Car(carProperties);
 
-        LOGGER.info("Here is our car:");
-        LOGGER.info("-> model: {}" + car.getModel().get());
-        LOGGER.info("-> price: {}" + car.getPrice().get());
-        LOGGER.info("-> parts: ");
-        car.getParts().forEach(p -> LOGGER.info(p.getType().get() + p.getModel().get() + p.getPrice().get()));
+        log.info("Here is our car:");
+        log.info("-> model: {}" + car.getModel().get());
+        log.info("-> price: {}" + car.getPrice().get());
+        log.info("-> parts: ");
+        car.getParts().forEach(p -> log.info(p.getType().get() + p.getModel().get() + p.getPrice().get()));
     }
 }
