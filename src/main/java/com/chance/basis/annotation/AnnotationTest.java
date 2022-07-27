@@ -48,4 +48,9 @@ public class AnnotationTest {
     public void testSee() {
 
     }
+
+    @Test
+    public void testDemo() {
+
+    }
 }

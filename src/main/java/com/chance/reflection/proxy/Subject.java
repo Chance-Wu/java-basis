@@ -9,14 +9,8 @@ package com.chance.reflection.proxy;
  * @since 2020-02-20
  */
 public interface Subject {
-    /**
-     *
-     */
+
     void rent();
 
-    /**
-     *
-     * @param str
-     */
     void hello(String str);
 }
