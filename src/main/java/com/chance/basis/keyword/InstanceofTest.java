@@ -26,7 +26,7 @@ public class InstanceofTest {
         System.out.println(null instanceof Object);
 
         // 3.class类的实例对象
-        Integer integer = new Integer(1);
+        Integer integer = Integer.valueOf(1);
         System.out.println(integer instanceof Integer);
 
         ArrayList<Object> arrayList = new ArrayList<>();

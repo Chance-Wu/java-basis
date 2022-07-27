@@ -13,7 +13,7 @@ import org.junit.Test;
 public class DefaultImplementsTest {
 
     @Test
-    public void testImplements_01() {
+    public void testImplements01() {
         IFormula formula = new IFormula() {
             @Override
             public double calculate(int a) {
@@ -28,7 +28,7 @@ public class DefaultImplementsTest {
     }
 
     @Test
-    public void testImplements_02() {
+    public void testImplements02() {
         // a 是一个入参名称
         // -> a * a 箭头指向是具体的实现
         IFormula formula = a -> a;

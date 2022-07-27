@@ -10,12 +10,12 @@ import java.io.*;
  * @author chance
  * @since 2020-07-08
  */
-public class SerializableTest {
+public class JDKSerializableTest {
 
     public static void main(String[] args) throws Exception {
-//        serializeFlyPig();
-        FlyPig flyPig = deserializeFlyPig();
-        System.out.println(flyPig.toString());
+        serializeFlyPig();
+//        FlyPig flyPig = deserializeFlyPig();
+//        System.out.println(flyPig.toString());
 
     }
 
@@ -28,7 +28,7 @@ public class SerializableTest {
         flyPig.setName("naruto");
         flyPig.setCar("0000");
         // ObjectOutputStream 对象输出流，将 flyPig 对象存储到E盘的 flyPig.txt 文件中，完成对 flyPig 对象的序列化操作
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("/Users/chance/Desktop/test/flyPig.txt")));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("/Users/chenyang/Desktop/test/flyPig.txt")));
         oos.writeObject(flyPig);
         System.out.println("FlyPig 对象序列化成功！");
         oos.close();
@@ -38,7 +38,7 @@ public class SerializableTest {
      * 反序列化
      */
     private static FlyPig deserializeFlyPig() throws Exception {
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File("/Users/chance/Desktop/test/flyPig.txt")));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File("/Users/chenyang/Destestktop/test/flyPig.txt")));
         FlyPig person = (FlyPig) ois.readObject();
         System.out.println("FlyPig 对象反序列化成功！");
         return person;

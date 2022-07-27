@@ -28,7 +28,7 @@ public class SwapTest {
             Field value = Integer.class.getDeclaredField("value");
             value.setAccessible(true);
             value.set(a, b);
-            value.set(b, new Integer(temp));
+            value.set(b, Integer.valueOf(temp));
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {

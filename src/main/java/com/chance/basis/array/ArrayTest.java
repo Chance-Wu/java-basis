@@ -79,15 +79,15 @@ public class ArrayTest {
 
         // 数组初始化形式1
         Integer[] a = {
-                new Integer(1),
-                new Integer(2),
-                new Integer(3),
+                Integer.valueOf(1),
+                Integer.valueOf(2),
+                Integer.valueOf(3),
         };
         // 数组初始化形式2
         Integer[] b = new Integer[]{
-                new Integer(1),
-                new Integer(2),
-                new Integer(3),
+                Integer.valueOf(1),
+                Integer.valueOf(2),
+                Integer.valueOf(3),
         };
         // 静态初始化（初始化数组与给数组元素赋值同时进行）
         // 动态初始化（初始化数组与给数组元素赋值分开进行）
