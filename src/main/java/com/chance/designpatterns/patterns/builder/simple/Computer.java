@@ -1,16 +1,22 @@
-package com.chance.designpatterns.patterns.builder;
+package com.chance.designpatterns.patterns.builder.simple;
 
 /**
- * @Description: ComputerBuilder
+ * @Description: 简化使用Builder的方式
  * @Author: chance
  * @Date: 4/12/21 8:49 PM
  * @Version 1.0
  */
 public class Computer {
 
+    /**
+     * 必传参数
+     */
     private final String cpu;
     private final String ram;
 
+    /**
+     * 可选参数
+     */
     private final int usbCount;
     private final String keyboard;
     private final String display;

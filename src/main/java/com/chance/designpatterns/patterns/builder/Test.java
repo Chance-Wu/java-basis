@@ -1,5 +1,10 @@
 package com.chance.designpatterns.patterns.builder;
 
+import com.chance.designpatterns.patterns.builder.classic.ComputerClassic;
+import com.chance.designpatterns.patterns.builder.classic.ComputerClassicDirector;
+import com.chance.designpatterns.patterns.builder.classic.MacComputerClassicBuilder;
+import com.chance.designpatterns.patterns.builder.simple.Computer;
+
 /**
  * <p>
  *
@@ -11,19 +16,16 @@ package com.chance.designpatterns.patterns.builder;
 public class Test {
 
     public static void main(String[] args) {
-        PersonBuilder personBuilder = new PersonBuilder.Builder(1, "张三")
-                .age(22)
-                .sex("男")
-                .desc("使用builder模式")
-                .build();
-
-        System.out.println(personBuilder.toString());
-
-        Person2 person2 = new Person2.Person2Builder()
-                .name("chance")
-                .age(18)
-                .build();
-
         Computer computer = new Computer.Builder("i5", "8g").build();
+
+        // 经典Builder模式
+        // 1.生成director
+        // 2.生成一个目标builder
+        // 3.使用director组装builder
+        ComputerClassicDirector director = new ComputerClassicDirector();
+        MacComputerClassicBuilder builder = new MacComputerClassicBuilder("i5处理器", "三星125");
+        director.makeComputerClassic(builder);
+        ComputerClassic macComputer = builder.getComputer();
+
     }
 }

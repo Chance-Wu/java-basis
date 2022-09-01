@@ -1,6 +1,12 @@
 package com.chance.toolkit.utils;
 
+import com.google.common.collect.Maps;
+
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @Description: Test
@@ -11,8 +17,9 @@ import java.math.BigDecimal;
 public class Test {
 
     public static void main(String[] args) {
-        long coupon_amt = BigDecimal.valueOf(9223372036854.775807).multiply(BigDecimal.valueOf(1000000)).longValue();
-        System.out.println(coupon_amt);
+//        long coupon_amt = BigDecimal.valueOf(9223372036854.775807).multiply(BigDecimal.valueOf(1000000)).longValue();
+//        System.out.println(coupon_amt);
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
     }
 
     //
