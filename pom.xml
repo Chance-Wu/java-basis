@@ -17,7 +17,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <protobuf.version>3.21.1</protobuf.version>
+        <protobuf.version>3.21.7</protobuf.version>
     </properties>
 
     <!--私服地址，用于下载私服上的jar-->
