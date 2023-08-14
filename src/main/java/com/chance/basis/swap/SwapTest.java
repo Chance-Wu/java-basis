@@ -12,46 +12,25 @@ import java.lang.reflect.Field;
  */
 public class SwapTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Integer a = 1;
         Integer b = 2;
         System.out.printf("a = %s, b = %s\n", a, b);
 //        swap(a, b);
-//        swap1(a, b);
-        swap2(a, b);
+        swap1(a, b);
         System.out.printf("a = %s, b = %s\n", a, b);
     }
 
-    public static void swap2(Integer a, Integer b) {
+    public static void swap1(Integer a, Integer b) throws Exception {
         int temp = a.intValue();
-        try {
-            Field value = Integer.class.getDeclaredField("value");
-            value.setAccessible(true);
-            value.set(a, b);
-            value.set(b, Integer.valueOf(temp));
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void swap1(Integer a, Integer b) {
-        int temp = a.intValue();
-        try {
-            Field value = Integer.class.getDeclaredField("value");
-            value.setAccessible(true);
-            value.set(a, b);
-            value.set(b, temp);
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
+        Field value = Integer.class.getDeclaredField("value");
+        value.setAccessible(true);
+        value.set(a, b);
+        value.set(b, temp);
     }
 
     /**
-     * 错误的方式
+     * 错误的方式，方法里面并没有改变原来的引用关系，a，b还是指向原来的Object对象
      */
     public static void swap(Integer a, Integer b) {
         int temp = a;

@@ -1,6 +1,8 @@
 package com.chance.basis.typeofdata;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Calendar;
 
 /**
  * <p>
@@ -16,7 +18,8 @@ public class BigDecimalTest {
     public static void main(String[] args) {
 
         // a.条件判断超预期
-        System.out.println(1f == 0.99999999f);
+        System.out.println(1f == 0.99999999f);//超出精度
+        System.out.println(1d == 0.99999999d);
         // b.数据转换超预期
         // c.基本运算超预期
         // d.数据自增超预期
@@ -66,5 +69,10 @@ public class BigDecimalTest {
         System.out.println("除法用value结果：" + result5);
         System.out.println("除法用string结果：" + result52);
 
+
+//        BigDecimal a = new BigDecimal(5.123456);
+//        BigDecimal b = new BigDecimal(100d);
+//        BigDecimal divide = a.divide(b, 6, RoundingMode.HALF_UP);
+//        System.out.println(divide);
     }
 }
