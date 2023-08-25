@@ -2,6 +2,8 @@ package com.chance.basis.clazz;
 
 import com.chance.basis.entity.Person;
 
+import java.lang.reflect.Field;
+
 /**
  * <p>
  * 获取类类型的3种方式：
@@ -37,5 +39,10 @@ public class ClassObjectTest {
 
         System.out.println(person);
         System.out.println(person3);
+
+        Field[] declaredFields = personClass3.getDeclaredFields();
+        for (Field field : declaredFields) {
+            System.out.println(field.getName());
+        }
     }
 }
