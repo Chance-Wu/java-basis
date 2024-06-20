@@ -3,7 +3,7 @@ package com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsi
 import com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsibilityandfactory.request.TransRequest;
 
 /**
- * 处理接口
+ * 处理抽象类
  *
  * @author: chance
  * @date: 2024/6/12 14:57
