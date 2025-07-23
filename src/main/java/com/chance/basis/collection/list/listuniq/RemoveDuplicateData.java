@@ -29,7 +29,7 @@ public class RemoveDuplicateData {
 //        List removeDuplicate3 = removeDuplicate3(list);
 //        System.out.println(removeDuplicate3);
 
-        List removeDuplicate6 = removeDuplicate6(list);
+        List<Integer> removeDuplicate6 = removeDuplicate6(list);
         System.out.println(removeDuplicate6);
     }
 
@@ -80,9 +80,9 @@ public class RemoveDuplicateData {
      */
     public static List removeDuplicate4(List list) {
         List listTemp = new ArrayList();
-        for (int i = 0; i < list.size(); i++) {
-            if (!listTemp.contains(list.get(i))) {
-                listTemp.add(list.get(i));
+        for (Object o : list) {
+            if (!listTemp.contains(o)) {
+                listTemp.add(o);
             }
         }
         return listTemp;
@@ -108,8 +108,8 @@ public class RemoveDuplicateData {
      * JDK 1.8 Stream中对List进行去重
      * list.stream.distinct();
      */
-    public static List removeDuplicate6(List<String> list) {
-        List unique = list.stream()
+    public static List<Integer> removeDuplicate6(List<String> list) {
+        List<Integer> unique = list.stream()
 //                .distinct()
 //                .limit(2)
 //                .skip(2)

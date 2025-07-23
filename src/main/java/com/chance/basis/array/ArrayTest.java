@@ -62,8 +62,8 @@ public class ArrayTest {
     public void increaseArrayLength() {
         int[] original = {2, 1, 4, 3, 6, 5};
         int[] result = Arrays.copyOf(original, 10);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
+        for (int j : result) {
+            System.out.println(j);
         }
     }
 
@@ -79,15 +79,15 @@ public class ArrayTest {
 
         // 数组初始化形式1
         Integer[] a = {
-                Integer.valueOf(1),
-                Integer.valueOf(2),
-                Integer.valueOf(3),
+                1,
+                2,
+                3,
         };
         // 数组初始化形式2
         Integer[] b = new Integer[]{
-                Integer.valueOf(1),
-                Integer.valueOf(2),
-                Integer.valueOf(3),
+                1,
+                2,
+                3,
         };
         // 静态初始化（初始化数组与给数组元素赋值同时进行）
         // 动态初始化（初始化数组与给数组元素赋值分开进行）

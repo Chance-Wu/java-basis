@@ -4,9 +4,9 @@ import com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsib
 
 /**
  * 业务逻辑处理
- * @author: chance
- * @date: 2024/6/12 15:38
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 15:38
+ * @since 1.0
  */
 public class BusinessLogicHandler extends TransHandler {
     @Override

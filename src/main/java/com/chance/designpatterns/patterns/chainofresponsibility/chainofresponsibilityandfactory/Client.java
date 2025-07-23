@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: chance
- * @date: 2024/6/12 16:21
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 16:21
+ * @since 1.0
  */
 public class Client {
 

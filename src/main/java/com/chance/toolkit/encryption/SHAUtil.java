@@ -6,9 +6,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author: chance
- * @date: 2022/6/24 10:29
- * @since: 1.0
+ * @author chance
+ * @date 2022/6/24 10:29
+ * @since 1.0
  */
 public class SHAUtil {
 
@@ -92,8 +92,8 @@ public class SHAUtil {
      */
     private static String byteArrayToHexString(byte[] bytes) {
         StringBuffer sb = new StringBuffer();
-        for (int i = 0; i < bytes.length; i++) {
-            sb.append(byteToHexString(bytes[i]));
+        for (byte aByte : bytes) {
+            sb.append(byteToHexString(aByte));
         }
         return sb.toString();
     }

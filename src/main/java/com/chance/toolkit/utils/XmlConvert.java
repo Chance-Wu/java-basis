@@ -38,25 +38,23 @@ public class XmlConvert {
 
     public static String jsonToXmlstr(JSONObject jObj,StringBuffer buffer ){
         Set<Map.Entry<String, Object>> se = jObj.entrySet();
-        for(Iterator<Map.Entry<String, Object>> it = se.iterator(); it.hasNext(); )
-        {
-            Map.Entry<String, Object> en = it.next();
-            if(en.getValue().getClass().getName().equals("com.alibaba.fastjson.JSONObject")){
-                buffer.append("<"+en.getKey()+">");
+        for (Map.Entry<String, Object> en : se) {
+            if (en.getValue().getClass().getName().equals("com.alibaba.fastjson.JSONObject")) {
+                buffer.append("<" + en.getKey() + ">");
                 JSONObject jo = jObj.getJSONObject(en.getKey());
-                jsonToXmlstr(jo,buffer);
-                buffer.append("</"+en.getKey()+">");
-            }else if(en.getValue().getClass().getName().equals("com.alibaba.fastjson.JSONArray")){
+                jsonToXmlstr(jo, buffer);
+                buffer.append("</" + en.getKey() + ">");
+            } else if (en.getValue().getClass().getName().equals("com.alibaba.fastjson.JSONArray")) {
                 JSONArray jarray = jObj.getJSONArray(en.getKey());
                 for (int i = 0; i < jarray.size(); i++) {
-                    buffer.append("<"+en.getKey()+">");
-                    JSONObject jsonobject =  jarray.getJSONObject(i);
-                    jsonToXmlstr(jsonobject,buffer);
-                    buffer.append("</"+en.getKey()+">");
+                    buffer.append("<" + en.getKey() + ">");
+                    JSONObject jsonobject = jarray.getJSONObject(i);
+                    jsonToXmlstr(jsonobject, buffer);
+                    buffer.append("</" + en.getKey() + ">");
                 }
-            }else if(en.getValue().getClass().getName().equals("java.lang.String")){
-                buffer.append("<"+en.getKey()+">"+en.getValue());
-                buffer.append("</"+en.getKey()+">");
+            } else if (en.getValue().getClass().getName().equals("java.lang.String")) {
+                buffer.append("<" + en.getKey() + ">" + en.getValue());
+                buffer.append("</" + en.getKey() + ">");
             }
 
         }

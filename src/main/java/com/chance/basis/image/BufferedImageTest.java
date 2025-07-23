@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: chance
- * @date: 2022/4/25 14:51
- * @since: 1.0
+ * @author chance
+ * @date 2022/4/25 14:51
+ * @since 1.0
  */
 public class BufferedImageTest {
 

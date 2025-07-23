@@ -4,9 +4,9 @@ import com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsib
 
 /**
  * 日志处理
- * @author: chance
- * @date: 2024/6/12 15:37
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 15:37
+ * @since 1.0
  */
 public class LoggingHandler extends TransHandler {
     @Override

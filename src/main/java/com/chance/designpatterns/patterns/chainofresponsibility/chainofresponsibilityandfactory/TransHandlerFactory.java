@@ -11,9 +11,9 @@ import java.util.List;
 /**
  * 工厂
  *
- * @author: chance
- * @date: 2024/6/12 15:07
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 15:07
+ * @since 1.0
  */
 public class TransHandlerFactory {
 

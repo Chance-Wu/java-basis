@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsibilityandfactory.request;
 
 /**
- * @author: chance
- * @date: 2024/6/12 15:45
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 15:45
+ * @since 1.0
  */
 public class AuthRequest implements TransRequest {
 }

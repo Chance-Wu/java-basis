@@ -14,9 +14,9 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
 /**
- * @author: chance
- * @date: 2022/6/28 10:05
- * @since: 1.0
+ * @author chance
+ * @date 2022/6/28 10:05
+ * @since 1.0
  */
 public class RSAUtil {
 

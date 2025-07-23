@@ -5,9 +5,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility.example.optimiz
  * 实现这个接口的类将形成一个处理链，每个处理器负责特定类型的传输请求。
  * 使用链式处理的优点是可以在不中断处理链的情况下动态添加或移除处理节点。
  *
- * @author: chance
- * @date: 2024/6/20 13:19
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 13:19
+ * @since 1.0
  */
 public interface TransHandler {
 

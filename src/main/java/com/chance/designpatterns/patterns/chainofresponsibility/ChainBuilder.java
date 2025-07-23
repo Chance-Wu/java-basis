@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * 用于构建责任链。
  *
- * @author: chance
- * @date: 2024/6/12 14:40
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 14:40
+ * @since 1.0
  */
 public class ChainBuilder {
     private final List<TransHandler> handlers;

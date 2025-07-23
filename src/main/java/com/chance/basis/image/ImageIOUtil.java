@@ -12,9 +12,9 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author: chance
- * @date: 2022/4/26 09:00
- * @since: 1.0
+ * @author chance
+ * @date 2022/4/26 09:00
+ * @since 1.0
  */
 public class ImageIOUtil {
 
@@ -243,9 +243,9 @@ public class ImageIOUtil {
             graphics.setFont(new Font(font, fontStyle, fontSize));
             graphics.setColor(color);
             //遍历水印文字数组
-            for (int i = 0; i < inputWords.size(); i++) {
+            for (String inputWord : inputWords) {
                 //输入水印文字及其起始x、y坐标
-                graphics.drawString(inputWords.get(i), x, y);
+                graphics.drawString(inputWord, x, y);
                 y += 60;
             }
             graphics.dispose();

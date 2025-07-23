@@ -71,9 +71,9 @@ public class MyBeanFactory {
                         break;
                     }
 
-                    for (int k = 0; k < pd.length; k++) {
-                        if (pd[k].getName().equalsIgnoreCase(name.getText())) {
-                            mSet = pd[k].getWriteMethod();
+                    for (java.beans.PropertyDescriptor propertyDescriptor : pd) {
+                        if (propertyDescriptor.getName().equalsIgnoreCase(name.getText())) {
+                            mSet = propertyDescriptor.getWriteMethod();
                             //利用Java的反射极致调用对象的某个set方法，并将值设置进去
                             mSet.invoke(obj, value);
                         }

@@ -4,9 +4,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility.example.optimiz
  * 第二关处理类，继承自AbstractHandler，实现处理流程的具体逻辑。
  * 在这个类中，主要负责处理第二关的业务逻辑，并根据处理结果决定是否需要将请求传递给下一个处理器。
  *
- * @author: chance
- * @date: 2024/6/20 10:27
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 10:27
+ * @since 1.0
  */
 public class SecondPassHandler extends AbstractHandler {
 

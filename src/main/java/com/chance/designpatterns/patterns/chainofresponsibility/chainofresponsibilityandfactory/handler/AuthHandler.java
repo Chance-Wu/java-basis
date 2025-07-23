@@ -4,9 +4,9 @@ import com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsib
 
 /**
  * 认证处理
- * @author: chance
- * @date: 2024/6/12 15:37
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 15:37
+ * @since 1.0
  */
 public class AuthHandler extends TransHandler {
     @Override

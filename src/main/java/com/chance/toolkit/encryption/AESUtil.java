@@ -10,9 +10,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
 /**
- * @author: chance
- * @date: 2022/6/27 09:38
- * @since: 1.0
+ * @author chance
+ * @date 2022/6/27 09:38
+ * @since 1.0
  */
 public class AESUtil {
 

@@ -5,9 +5,9 @@ import com.chance.designpatterns.patterns.chainofresponsibility.chainofresponsib
 /**
  * 处理抽象类
  *
- * @author: chance
- * @date: 2024/6/12 14:57
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 14:57
+ * @since 1.0
  */
 public abstract class TransHandler {
 

@@ -19,13 +19,7 @@ public class StudentComparator implements Comparator<Student> {
         if (s1.getScore() > s2.getScore()) {
             return -1;
         } else if (s1.getScore() == s2.getScore()) {
-            if (s1.getId() > s2.getId()) {
-                return 1;
-            } else if (s1.getId() == s2.getId()) {
-                return 0;
-            } else {
-                return -1;
-            }
+            return Integer.compare(s1.getId(), s2.getId());
         } else {
             return 1;
         }

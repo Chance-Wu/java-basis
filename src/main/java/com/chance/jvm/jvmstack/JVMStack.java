@@ -9,7 +9,12 @@ package com.chance.jvm.jvmstack;
 public class JVMStack {
 
     public static void main(String[] args) {
-        int i;
-        //System.out.println(i);局部变量没有初始化，在编译过程中就会报错。
+        int result = add(5, 7);
+        System.out.println("Result: " + result);
+    }
+
+    public static int add(int a, int b) {
+        int sum = a + b;
+        return sum;
     }
 }

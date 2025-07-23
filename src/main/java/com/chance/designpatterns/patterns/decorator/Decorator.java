@@ -1,6 +1,7 @@
 package com.chance.designpatterns.patterns.decorator;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ListIterator;
 
 /**
@@ -16,7 +17,7 @@ public class Decorator implements Work {
     /**
      * 额外增加的功能被打包在这个List中
      */
-    private ArrayList others = new ArrayList();
+    private List<String> others = new ArrayList<>();
 
     /**
      * 在构造器中使用组合new方式,引入Work对象

@@ -8,9 +8,9 @@ import java.util.List;
 
 /**
  * @description: CollectionSort
- * @author: chance
- * @date: 2022/10/17 15:31
- * @since: 1.0
+ * @author chance
+ * @date 2022/10/17 15:31
+ * @since 1.0
  */
 public class CollectionSortUtils {
 

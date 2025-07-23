@@ -7,9 +7,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author: chance
- * @date: 2022/6/24 09:47
- * @since: 1.0
+ * @author chance
+ * @date 2022/6/24 09:47
+ * @since 1.0
  */
 public class MD5Util {
 
@@ -22,9 +22,9 @@ public class MD5Util {
 
     public static String toHexString(byte[] b) { // String to byte
         StringBuilder sb = new StringBuilder(b.length * 2);
-        for (int i = 0; i < b.length; i++) {
-            sb.append(HEX_DIGITS[(b[i] & 0xf0) >>> 4]);
-            sb.append(HEX_DIGITS[b[i] & 0x0f]);
+        for (byte value : b) {
+            sb.append(HEX_DIGITS[(value & 0xf0) >>> 4]);
+            sb.append(HEX_DIGITS[value & 0x0f]);
         }
         return sb.toString();
     }

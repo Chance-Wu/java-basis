@@ -4,9 +4,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility.example.optimiz
  * 第一关处理类，继承自AbstractHandler。
  * 该类负责处理第一关的逻辑，并根据得分决定是否需要进一步处理（即调用下一关的处理类）。
  *
- * @author: chance
- * @date: 2024/6/20 10:27
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 10:27
+ * @since 1.0
  */
 public class FirstPassHandler extends AbstractHandler {
 

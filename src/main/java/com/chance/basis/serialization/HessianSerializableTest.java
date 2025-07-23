@@ -7,9 +7,9 @@ import com.caucho.hessian.io.HessianInput;
 import java.io.*;
 
 /**
- * @author: chance
- * @date: 2022/7/5 22:18
- * @since: 1.0
+ * @author chance
+ * @date 2022/7/5 22:18
+ * @since 1.0
  */
 public class HessianSerializableTest {
 

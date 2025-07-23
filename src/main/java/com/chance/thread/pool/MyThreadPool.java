@@ -5,9 +5,9 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author: chance
- * @date: 2022/4/7 09:11
- * @since: 1.0
+ * @author chance
+ * @date 2022/4/7 09:11
+ * @since 1.0
  */
 public class MyThreadPool {
 

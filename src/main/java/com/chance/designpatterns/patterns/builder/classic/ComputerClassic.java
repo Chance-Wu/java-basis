@@ -2,9 +2,9 @@ package com.chance.designpatterns.patterns.builder.classic;
 
 /**
  * 目标类
- * @author: chance
- * @date: 2022/9/1 20:07
- * @since: 1.0
+ * @author chance
+ * @date 2022/9/1 20:07
+ * @since 1.0
  */
 public class ComputerClassic {
 

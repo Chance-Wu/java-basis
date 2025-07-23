@@ -37,10 +37,10 @@ public class CallableTest implements Callable<String> {
         executor.shutdown();
 
         // 最后，用主线程的容器装载其他线程的返回值
-        for (int i = 0; i < results.size(); i++) {
+        for (Future<String> result : results) {
             try {
-                System.out.println(results.get(i).get());
-                list.add(results.get(i).get());
+                System.out.println(result.get());
+                list.add(result.get());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

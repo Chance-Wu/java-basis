@@ -32,7 +32,7 @@ public class RemoveDuplicate {
         b.add("c");
         b.add("b");
         a.addAll(b);
-        List list = a
+        List<String> list = a
                 .stream()
                 .distinct()
                 .collect(toList());

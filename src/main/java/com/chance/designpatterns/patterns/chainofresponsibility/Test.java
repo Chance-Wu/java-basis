@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.chainofresponsibility;
 
 /**
- * @author: chance
- * @date: 2024/6/12 13:35
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 13:35
+ * @since 1.0
  */
 public class Test {
 

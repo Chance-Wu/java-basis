@@ -3,9 +3,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility;
 /**
  * 具体处理者1，实现了Handler接口。
  *
- * @author: chance
- * @date: 2024/6/12 10:24
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 10:24
+ * @since 1.0
  */
 public class ConcreteHandler1 implements TransHandler {
 

@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.chainofresponsibility;
 
 /**
- * @author: chance
- * @date: 2024/6/12 10:24
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/12 10:24
+ * @since 1.0
  */
 public class ConcreteHandler2 implements TransHandler {
 

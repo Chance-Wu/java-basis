@@ -55,7 +55,7 @@ public class BeanUtilsTest {
                 }
             }
         }, Date.class);*/
-        ConvertUtils.register(new DateLocaleConverter(),Date.class);
+        ConvertUtils.register(new DateLocaleConverter(), Date.class);
 
         // 封装到p对象中
 
@@ -71,11 +71,11 @@ public class BeanUtilsTest {
         System.out.println(p.getBirthday());
 
 
-        Map map = new HashMap();
-        map.put("name","chance");
-        map.put("password","1234");
-        map.put("age","28");
-        map.put("birthday","1994-09-19");
+        Map<String, String> map = new HashMap<>();
+        map.put("name", "chance");
+        map.put("password", "1234");
+        map.put("age", "28");
+        map.put("birthday", "1994-09-19");
 
         ConvertUtils.register(new DateLocaleConverter(), Date.class);
         Person bean = new Person();

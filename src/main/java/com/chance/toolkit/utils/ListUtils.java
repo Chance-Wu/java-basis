@@ -9,9 +9,9 @@ import java.util.List;
 
 /**
  * @description: ListUtils
- * @author: chance
- * @date: 2022/10/17 15:38
- * @since: 1.0
+ * @author chance
+ * @date 2022/10/17 15:38
+ * @since 1.0
  */
 public class ListUtils {
 
@@ -30,9 +30,9 @@ public class ListUtils {
             public int compare(E a, E b) {
                 int ret = 0;
                 try {
-                    for (int i = 0; i < sortNameArr.length; i++) {
-                        ret = ListUtils.compareObject(sortNameArr[i], isAsc, a, b);
-                        System.out.println(">>>>>>>>ret:"+ret);
+                    for (String s : sortNameArr) {
+                        ret = ListUtils.compareObject(s, isAsc, a, b);
+                        System.out.println(">>>>>>>>ret:" + ret);
                         if (0 != ret) {
                             break;
                         }

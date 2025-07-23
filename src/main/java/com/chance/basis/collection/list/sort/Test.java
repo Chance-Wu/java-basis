@@ -52,7 +52,7 @@ public class Test {
             System.out.println("id=" + stu.getId() + " name=" + stu.getName() + " score=" + stu.getScore());
         }
 
-        List<Person> listA = new ArrayList();
+        List<Person> listA = new ArrayList<>();
         Person p1 = new Person();
         Person p2 = new Person();
         Person p3 = new Person();

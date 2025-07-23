@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.chainofresponsibility.example.optimize;
 
 /**
- * @author: chance
- * @date: 2024/6/20 10:32
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 10:32
+ * @since 1.0
  */
 public class HandlerClient {
 

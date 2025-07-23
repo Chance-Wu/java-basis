@@ -21,18 +21,18 @@ public class ListUniqTest {
         List<String> result = new ArrayList<>();
         boolean flag;
         // 循环原数组
-        for (int i = 0; i < array.length; i++) {
+        for (String s : array) {
             flag = false;
             // 循环结果集
-            for (int j = 0; j < result.size(); j++) {
-                if (array[i].equals(result.get(j))) {
+            for (String string : result) {
+                if (s.equals(string)) {
                     flag = true;
                     break;
                 }
             }
             // 数组的元素和结果集中的元素进行比对，若不相同，则存入结果集
             if (!flag) {
-                result.add(array[i]);
+                result.add(s);
             }
         }
         String[] arrayResult = result.toArray(new String[result.size()]);
@@ -48,7 +48,7 @@ public class ListUniqTest {
         List<String> list = new ArrayList<>();
         list.add(array[0]);
         for (int i = 1; i < array.length; i++) {
-            if (list.toString().indexOf(array[i]) == -1) {
+            if (!list.toString().contains(array[i])) {
                 list.add(array[i]);
             }
         }
@@ -102,8 +102,8 @@ public class ListUniqTest {
         String[] array = {"a", "b", "c", "c", "d", "e", "e", "e", "a"};
         Set<String> set = new HashSet<>();
         // 遍历原数组，将元素添加进Set中
-        for (int i = 0; i < array.length; i++) {
-            set.add(array[i]);
+        for (String s : array) {
+            set.add(s);
         }
         String[] arrayResult = set.toArray(new String[set.size()]);
         System.out.println(Arrays.toString(arrayResult));

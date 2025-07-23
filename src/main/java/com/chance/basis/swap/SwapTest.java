@@ -22,7 +22,7 @@ public class SwapTest {
     }
 
     public static void swap1(Integer a, Integer b) throws Exception {
-        int temp = a.intValue();
+        int temp = a;
         Field value = Integer.class.getDeclaredField("value");
         value.setAccessible(true);
         value.set(a, b);

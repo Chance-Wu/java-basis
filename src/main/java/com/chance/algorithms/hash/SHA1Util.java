@@ -5,9 +5,9 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * @description: SHA1Util
- * @author: chance
- * @date: 2022/9/21 14:08
- * @since: 1.0
+ * @author chance
+ * @date 2022/9/21 14:08
+ * @since 1.0
  */
 public class SHA1Util {
 

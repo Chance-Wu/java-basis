@@ -51,8 +51,8 @@ public class BigDecimalTest {
         BigDecimal result42 = num32.abs();
 
         // 6.除法
-        BigDecimal result5 = num2.divide(num1, 20, BigDecimal.ROUND_HALF_UP);
-        BigDecimal result52 = num22.divide(num12, 20, BigDecimal.ROUND_HALF_UP);
+        BigDecimal result5 = num2.divide(num1, 20, RoundingMode.HALF_UP);
+        BigDecimal result52 = num22.divide(num12, 20, RoundingMode.HALF_UP);
 
         System.out.println("加法用value结果：" + result1);
         System.out.println("加法用string结果：" + result12);

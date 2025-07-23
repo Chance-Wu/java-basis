@@ -5,9 +5,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility.example.optimiz
  * 该类为处理请求的实体提供了一个抽象接口，具体的处理逻辑由其子类实现。
  * 节点之间通过next指针形成链式结构，以便请求在链中传递。
  *
- * @author: chance
- * @date: 2024/6/20 10:22
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 10:22
+ * @since 1.0
  */
 public abstract class AbstractHandler implements TransHandler {
 

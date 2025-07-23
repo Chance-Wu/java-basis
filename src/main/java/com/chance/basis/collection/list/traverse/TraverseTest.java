@@ -25,7 +25,7 @@ public class TraverseTest {
     }
 
     //list 集合中添加10万条数据
-    public List initList(List<String> list) {
+    public List<String> initList(List<String> list) {
         int i = 0;
         int num = 6000000;
         for (i = 0; i < num; i++) {

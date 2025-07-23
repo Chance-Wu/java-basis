@@ -4,9 +4,9 @@ package com.chance.designpatterns.patterns.chainofresponsibility.example.optimiz
  * 第三关处理类，继承自AbstractHandler，实现处理逻辑。
  * 在这个类中，处理逻辑是给定分数95，并根据分数决定是否继续传递处理请求。
  *
- * @author: chance
- * @date: 2024/6/20 10:27
- * @since: 1.0
+ * @author chance
+ * @date 2024/6/20 10:27
+ * @since 1.0
  */
 public class ThirdPassHandler extends AbstractHandler {
 

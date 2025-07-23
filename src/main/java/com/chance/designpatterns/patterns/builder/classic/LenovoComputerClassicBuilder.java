@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.builder.classic;
 
 /**
- * @author: chance
- * @date: 2022/9/1 20:54
- * @since: 1.0
+ * @author chance
+ * @date 2022/9/1 20:54
+ * @since 1.0
  */
 public class LenovoComputerClassicBuilder extends ComputerClassicBuilder {
 

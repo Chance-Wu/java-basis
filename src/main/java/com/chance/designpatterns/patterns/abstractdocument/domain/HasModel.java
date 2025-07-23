@@ -1,22 +1,22 @@
 package com.chance.designpatterns.patterns.abstractdocument.domain;
 
 import com.chance.designpatterns.patterns.abstractdocument.Document;
+import com.chance.designpatterns.patterns.abstractdocument.domain.enums.CarProperty;
 
 import java.util.Optional;
 
 /**
- * <p>
+ * 定义了一个具有模型的文档接口
  *
- * <p>
+ * <p>该接口继承自Document，并提供了一种获取模型信息的通用方法
  *
  * @author chance
- * @since 2020-06-18
+ * @date 2024/11/28 14:53
+ * @since 1.0
  */
 public interface HasModel extends Document {
 
-    String PROPERTY = "model";
-
     default Optional<String> getModel() {
-        return Optional.ofNullable((String) get(PROPERTY));
+        return Optional.ofNullable((String) get(CarProperty.MODEL.toString()));
     }
 }

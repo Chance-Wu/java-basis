@@ -6,9 +6,9 @@ import java.math.BigDecimal;
 
 /**
  * @description: Sku
- * @author: chance
- * @date: 2022/10/17 15:33
- * @since: 1.0
+ * @author chance
+ * @date 2022/10/17 15:33
+ * @since 1.0
  */
 @Data
 public class Sku {

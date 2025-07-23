@@ -1,9 +1,9 @@
 package com.chance.designpatterns.patterns.chainofresponsibility.example;
 
 /**
- * @author: 第一关
- * @date: 2024/6/20 09:34
- * @since: 1.0
+ * @author 第一关
+ * @date 2024/6/20 09:34
+ * @since 1.0
  */
 public class FirstPassHandler {
 
